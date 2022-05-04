@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>find ID</title>
+<link rel="stylesheet" type="text/css" href="css/findId.css" />
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="find_id">
+        <ol>
+            <li><a href="find_id.html">아이디 찾기</a></li>
+            <li><a href="find_pw.html">비밀번호 찾기</a></li>
+        </ol>
+        <form action="/" method="post">
+            <fieldset>
+                <legend class="blind">아이디 찾기</legend>
+                <ol>
+                    <li>
+                        <label for="userMail" class="blind">이메일</label>
+                        <input type="email" id="userMail" placeholder="이메일" />
+                    </li>
+                    <li>
+                        <label for="phoneNum" class="blind">핸드폰 번호</label>
+                        <input type="text" id="phoneNum" placeholder="핸드폰 번호" />
+                        <button type="button">인증 문자 전송</button>
+                    </li>
+                    <li>
+                        <label for="certify" class="blind">인증번호</label>
+                        <input type="text" id="certify" placeholder="인증번호" />
+                        <span>03:21</span>
+                    </li>
+                    <li>
+                        <button type="reset" onclick = "location.href = 'login.html'">취소하기</button>
+                        <button type="button">아이디 찾기</button>
+                    </li>
+                </ol>
+            </fieldset>
+
+        </form>
+
+
+    </div>
+    
+</body>
+</html>

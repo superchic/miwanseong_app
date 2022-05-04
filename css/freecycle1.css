@@ -1,0 +1,111 @@
+@import url(reset.css);
+
+/* freecycle1.css */
+*{-webkit-text-size-adjust:none;}
+body{width:375px;height:100%;font-family: 'Nanum Gothic', sans-serif;font-size:15px;}
+a{text-decoration:none;color:#8F8F8F;}
+
+.freecycle1{width:100%;background: #EFEFEF;box-sizing: border-box;overflow: hidden;}
+
+
+.freecycle1 > ul:first-of-type{display: flex;flex-direction: row;justify-content:space-around;align-items:center;padding-top:57px;margin-left: 8px;}
+.freecycle1 > ul:first-of-type > .return{display:inline-block;width:15px;height:11px;background: url(../images/icon_return.png) no-repeat 0 0;text-indent: -9999px;overflow: hidden;}
+.freecycle1 > ul:first-of-type .return > a{display: block;}
+.freecycle1  > ul:first-of-type > li:nth-child(2){font-weight:bold;}
+.small_srchBtn{display:inline-block;width:25px;height:25px;background: url(../images/btn_search.png) no-repeat 0 0;text-indent: -9999px;overflow: hidden;animation:bounce 2s linear 0s infinite;}
+.small_srchBtn.on{animation: none;}
+.small_srchBtn > a{display: block;}
+.small_srchBox{display:none;text-align: center;}
+.small_srchBox.on{display:block;}
+.small_srchBox > form > fieldset > input[type="search"]{width:307px;height:50px;background: #E1E1E1;border:none;border:6px solid #979191;border-radius: 12px;text-indent:12px;}
+input::placeholder{font-size:14px;text-indent:12px;}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);}
+
+    25% {
+        transform: translateY(-5px);}
+
+    50% {
+        transform: translateY(0);}
+
+    75% {
+        transform: translateY(-3px);}
+        
+    100% {
+            transform: translateY(0);}
+}
+.freecycle1 > ul:nth-of-type(2){display: flex;flex-direction: row;margin-top:38px;margin-left:46px;}
+.freecycle1 > ul:nth-of-type(2) > li:first-child > a{display:inline-block;width:330px;height:60px;background:url(../images/bg_round_left_on.png) no-repeat 0 0;line-height: 60px;text-indent:45px;color:#fff;animation: round_menu 0.5s linear 0s;}
+.freecycle1 > ul:nth-of-type(2) > li:last-child > a{display:inline-block;width:178px;height:60px;background:url(../images/bg_round_right.png) no-repeat 0 0;line-height: 60px;text-indent:44px;color:#fff;margin-left: -178px;animation: round_menu 1s linear 0s,scale_ani 2s linear 1.2s infinite;}
+
+@keyframes round_menu {
+    0%{transform: translateX(100px);}
+    100%{transform: translateX(0);}
+    
+}
+
+@keyframes scale_ani {
+    0% {
+        transform: scale(1);}
+
+    25% {
+        transform: scale(1.2);}
+
+    50% {
+        transform: scale(1);}
+
+    75% {
+        transform: scale(1.1);}
+        
+    100% {
+        transform: scale(1);}
+    
+}
+
+
+.freecycle1 > div:nth-of-type(2) > ul{display: flex;flex-direction:row;justify-content:center;align-items: center;padding:21px 0;margin-left: 188px;}
+.freecycle1 > div:nth-of-type(2) > ul > li{margin-right:8px;}
+.freecycle1 > div:nth-of-type(2) > ul > li:nth-child(2) > a{display:block;width:10px;height:22px;background: url(../images/icon_view1.png) no-repeat 0 0;text-indent:-9999px;overflow: hidden;}
+.freecycle1 > div:nth-of-type(2) > ul > li:last-child > a{display:block;width:22px;height:22px;background: url(../images/icon_view2.png) no-repeat 0 0;text-indent:-9999px;overflow: hidden;}
+
+.heel{width:333px;height:298px;background: #E1E1E1;margin: 0 auto;border-radius: 29px;margin-bottom: 15px;animation: div_move 0.8s linear 0s;}
+.heel > div{display: flex;flex: row;justify-content: center;align-items: center;}
+.heel > div > span{display:inline-block;width:191px;height:298px;background: url(../images/main_free01.jpg) no-repeat 0 0;background-size: cover;background-position: center;border-radius: 29px;text-indent: -9999px;overflow: hidden;margin-left:-20px;}
+.heel > div > div{margin-left: 21px;}
+.heel > div > ul{display: flex;flex-direction: column;justify-content: center;align-items: center;margin-left: 21px;}
+
+.heel > div > ul > li{font-size: 14px;margin-bottom:15px;}
+.heel > div > ul > li:last-child{margin-bottom:0;}
+.heel > div > ul > li:first-child{font-weight: bold;}
+.heel > div > ul > li:nth-child(3) > a{display: block;width:100px;height:30px;line-height:30px;text-align:center;border: 1px solid #000;color:#000;border-radius: 8px;animation: scale_ani 2s linear 1s infinite;}
+
+
+.heel > div > ul > li:last-child > a{display: block;width:100px;height:30px;line-height:30px;text-align:center;border: 1px solid #000;color:#000;border-radius: 8px;}
+
+.doll{width:333px;height:298px;background: #E1E1E1;margin: 0 auto;border-radius: 29px;margin-bottom: 15px;animation: div_move 1s linear 0s;}
+.doll > div{display: flex;flex: row;justify-content: center;align-items: center;}
+.doll > div > span{display:inline-block;width:191px;height:298px;background: url(../images/main_free02.jpg) no-repeat -25px 0;background-size: cover;border-radius: 29px;text-indent: -9999px;overflow: hidden;margin-left:-20px;}
+.doll > div > div{margin-left: 21px;}
+.doll > div > ul{display: flex;flex-direction: column;justify-content: center;align-items: center;margin-left: 21px;}
+
+.doll > div > ul > li{font-size: 14px;margin-bottom:15px;}
+.doll > div > ul > li:last-child{margin-bottom:0;}
+.doll > div > ul > li:first-child{font-weight: bold;}
+.doll > div > ul > li:nth-child(3) > a{display: block;width:100px;height:30px;line-height:30px;text-align:center;border: 1px solid #000;color:#000;border-radius: 8px;}
+.doll > div > ul > li:last-child > a{display: block;width:100px;height:30px;line-height:30px;text-align:center;border: 1px solid #000;color:#000;border-radius: 8px;}
+
+@keyframes div_move {
+    0% {transform: translateY(-80px);}
+    100% {transform: translateY(0);}
+    
+}
+
+
+
+.freecycle1 > ul:last-of-type{display: flex;flex-direction: row;justify-content: center;padding:40px 0 32px 0;}
+.freecycle1 > ul:last-of-type > li{padding:0 10px}
+.freecycle1 > ul:last-of-type > li:nth-child(2){padding-bottom:2px;text-decoration: underline;text-underline-offset:5px;}
+.freecycle1 > ul:last-of-type > li:first-child > a{display:block;width:16px;height:16px;background: url(../images/btn_prev.png) no-repeat 0 0;text-indent:-9999px;overflow:hidden;}
+.freecycle1 > ul:last-of-type > li:last-child > a{display:block;width:16px;height:16px;background: url(../images/btn_next.png) no-repeat 0 0;text-indent:-9999px;overflow:hidden;}

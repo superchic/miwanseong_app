@@ -1,0 +1,77 @@
+@import url(reset.css);
+/* signUp.css */
+
+*{-webkit-text-size-adjust:none;}
+body{width:375px;height:100%;font-family: 'Nanum Gothic', sans-serif;}
+a{text-decoration:none;color:#8F8F8F;}
+
+.sign_up{width:100%;height:100%;background: #EFEFEF;display:flex;flex-direction: column;align-items: center;}
+.sign_up > p{font-weight:800;font-size:64px;color:#707070;margin:95px 0 69px 0;animation: hello 2s ease-in-out 0s;}
+@keyframes hello {
+    0% {transform: rotate(0deg);}
+    
+    100% {transform: rotate(360deg);}
+    
+}
+.sign_up > p > span{display:inline-block;width:50px;height:50px;background:url(../images/logo_small.png) no-repeat 0 0;text-indent:-9999px;overflow: hidden;animation: hello_scale 2s ease-in-out 2s;}
+@keyframes hello_scale {
+    0% {
+        transform: scale(1);}
+
+    25% {
+        transform: scale(1.3);}
+
+    50% {
+        transform: scale(1);}
+
+    75% {
+        transform: scale(1.1);}
+        
+    100% {
+            transform: scale(1);}
+    
+}
+
+ol > li{margin-bottom: 16px;}
+
+ol > li:first-child{position: relative;animation: form_move1 1.6s ease-in-out 0s;}
+ol > li:first-child > button{position:absolute;right:8px;top:8px;width:73px;height:29px;border:none;border-radius:6px;background: #979191;color:#fff;cursor: pointer;}
+ol > li:nth-child(2){animation: form_move1 1.4s ease-in-out 0s;}
+ol > li:nth-child(3){animation: form_move1 1.2s ease-in-out 0s;}
+ol > li:nth-child(4){animation: form_move2 1s ease-in-out 0s;}
+ol > li:nth-child(5){position: relative;animation: form_move2 1.4s ease-in-out 0s;}
+ol > li:nth-child(5) > button{position:absolute;right:8px;top:8px;width:73px;height:29px;border:none;border-radius:6px;background: #979191;color:#fff;cursor: pointer;}
+ol > li:nth-child(6){animation: form_move2 1.6s ease-in-out 0s;}
+ol > li:last-child{margin-top:66px;}
+ol > li:last-child > button:first-child{opacity:0;width:146px;height:45px;font-size:15px;color:#8F8F8F;border:none;border:1px solid #9A9A9A;margin-right:8px;cursor: pointer;animation: button 1s ease-in-out 1s forwards,click_ani 1s ease-in-out 2.2s infinite;}
+ol > li:last-child > button:last-child{opacity:0;width:146px;height:45px;font-size:15px;color:#8F8F8F;border:none;background:#FFBCBC;cursor: pointer;animation: button 1s ease-in-out 1.5s forwards;}
+
+@keyframes form_move1 {
+    0%{transform: translateY(-50px);}
+    100%{transform: translateY(0);}
+    
+}
+
+@keyframes form_move2 {
+    0%{transform: translateY(50px);}
+    100%{transform: translateY(0);}
+    
+}
+
+@keyframes button {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+    
+}
+
+@keyframes click_ani {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-20px);}
+    100% {transform: translateY(0);}
+    
+}
+
+input::placeholder{font-family: 'Nanum Gothic', sans-serif;font-size:15px;color:#8F8F8F;text-indent:10px;}
+input[type="text"]{width:302px;height:45px;font-size:15px;text-indent:10px;border:none;border:1px solid #9A9A9A;border-radius:10px;background: #EFEFEF;}
+input[type="password"]{width:302px;height:45px;font-size:15px;text-indent:10px;border:none;border:1px solid #9A9A9A;border-radius:10px;background: #EFEFEF;}
+input[type="email"]{width:302px;height:45px;font-size:15px;text-indent:10px;border:none;border:1px solid #9A9A9A;border-radius:10px;background: #EFEFEF;}

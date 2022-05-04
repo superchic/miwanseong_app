@@ -1,0 +1,108 @@
+@import url(reset.css);
+
+/* self interior2 */
+*{-webkit-text-size-adjust:none;}
+body{width:375px;font-size: 15px;font-family: 'Nanum Gothic', sans-serif;}
+a{text-decoration:none;color:#3B3939;}
+
+.self_interior2{width:100%;background: #EFEFEF;overflow: hidden;}
+
+.self_interior2 > div:first-of-type > ul{display:flex;flex-direction:row;justify-content:center;align-items:center;padding:57px 0 23px 0;box-sizing: border-box;margin-left: -104px;}
+.self_interior2 > div:first-of-type > ul > li:first-child{display: inline-block;width:15px;height:11px;background: url(../images/icon_return.png) no-repeat 0 0;text-indent: -9999px;overflow: hidden;vertical-align: middle;margin-right: 90px;}
+.self_interior2 > div:first-of-type > ul > li:first-child > a{display: block;}
+.self_interior2 > div:first-of-type > ul > li:last-child{font-weight: bold;}
+
+.picture{display: flex;flex-direction: row;justify-content: center;}
+.picture > div:first-child{display: flex;flex-direction: column;}
+.picture > div:first-child > ul > li:first-child{width:65px;height:65px;background: url(../images/interior04.jpg) no-repeat 0 0;background-size:65px 65px;border:1px solid #FFBCBC;text-indent: -9999px;overflow: hidden;margin-bottom: 5px;animation: photo_scale 0.3s linear 0s;}
+.picture > div:first-child > ul > li:nth-child(2){width:65px;height:65px;background: url(../images/interior07.jpg) no-repeat 0 0;background-size:65px 65px;text-indent: -9999px;overflow: hidden;margin-bottom: 5px;animation: photo_scale 0.6s linear 0s;}
+.picture > div:first-child > ul > li:last-child{width:65px;height:65px;background: url(../images/interior08.jpg) no-repeat 0 0;background-size:65px 65px;text-indent: -9999px;overflow: hidden;animation: photo_scale 0.9s linear 0s;}
+
+.picture > div:last-child > span{display:inline-block;width:254px;height:205px;background: url(../images/interior04.jpg) no-repeat 0 0;background-size:254px 205px;text-indent: -9999px;overflow: hidden;margin-left: 5px;margin-bottom:19.5px;animation: photo_scale 1.2s linear 0s;}
+
+@keyframes photo_scale {
+    0%{transform: scale(1.3);}
+
+    100%{transform: scale(1);}
+    
+}
+
+.self_interior2 > ul:nth-of-type(1){display: flex;flex-direction: row;justify-content: center;align-items: center;margin-left:258px;animation: ani1 1.2s linear 0s;}
+
+@keyframes ani1 {
+    0%{transform: translateX(30px);}
+
+    100%{transform: translateX(0);}
+}
+
+.self_interior2 > ul:nth-of-type(1) > li:first-child > a{display: block;width:14px;height:14px;background: url(../images/icon_like_black.png) no-repeat 0 0;text-indent: -9999px;overflow: hidden;}
+.self_interior2 > ul:nth-of-type(1) > li:nth-child(2){font-size:14px;margin-right: 14px;}
+.self_interior2 > ul:nth-of-type(1) > li:last-child > a{display: block;width:16px;height:18px;background: url(../images/icon_share.png) no-repeat 0 0;text-indent: -9999px;overflow: hidden;}
+
+.self_interior2 > ul:nth-of-type(2){display: flex;flex-direction: row;justify-content: center;align-items: center;margin-top: 23.5px;margin-bottom: 17px;}
+.self_interior2 > ul:nth-of-type(2) > li:first-child{width:42px;height:42px;background: url(../images/profile_01.jpg) no-repeat 0 0;background-size: 42px 42px;border-radius:50%;text-indent: -9999px;overflow: hidden;}
+.self_interior2 > ul:nth-of-type(2) > li:nth-child(2){margin:0 15px 0 6px;}
+.self_interior2 > ul:nth-of-type(2) > li:nth-child(3) > a{display: block;width:72px;height:35px;text-align:center;line-height: 35px;background: #979191;border-radius: 12px;color:#fff;margin-right: 8px;}
+.self_interior2 > ul:nth-of-type(2) > li:last-child > a{display: block;width:72px;height:35px;text-align:center;line-height: 35px;background: #979191;border-radius: 12px;color:#fff;
+animation: bounce 2s linear 0.8s infinite;}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);}
+
+    25% {
+        transform: translateY(-15px);}
+
+    50% {
+        transform: translateY(0);}
+
+    75% {
+        transform: translateY(-10px);}
+        
+    100% {
+            transform: translateY(0);}
+}
+
+.writing{display: flex;flex-direction: column;align-items: center;padding-bottom: 12px;}
+.writing_inner{display: flex;flex-direction: column;align-items: center;width: 345px;background: #E1E1E1;border-radius: 23px;margin: 0 auto;}
+.writing_inner > p:first-of-type{font-size: 14px;line-height: 24px;padding:16px 0;animation: ani2 1.5s linear 0s;}
+.writing_inner > p:nth-of-type(2){font-size: 14px;line-height: 24px;background: #FFBCBC;padding: 12px;animation: ani3 2s linear 0s;}
+.writing_inner > p:nth-of-type(2) > span{display: block;font-weight: bold;}
+.writing_inner > p:nth-of-type(3){margin-left:155px;margin-top: 12px;}
+
+@keyframes ani2 {
+    0%{opacity: 0;}
+
+    100%{opacity: 1;}
+
+    
+}
+
+@keyframes ani3 {
+    0%{transform: translateX(-30px);}
+
+    100%{transform: translateX(0);}
+
+    
+}
+
+@keyframes ani4 {
+    0%{transform: translateY(50px);}
+
+    100%{transform: translateX(0);}
+}
+
+.writing_inner > .reply1{display: flex;flex-direction: row;align-items: center;margin-top: 19px;animation: ani4 0.8s linear 0s;}
+.writing_inner > .reply1 > div{display: flex;flex-direction: column;align-items: center;margin-right: 8px;}
+.writing_inner > .reply1 > div > span:first-child{display: block;width:27px;height:27px;background:url(../images/profile_02.jpg) no-repeat 0 0;background-size: cover;background-position: center;border-radius: 50%;text-indent: -9999px;overflow: hidden;}
+.writing_inner > .reply1 > div > span:last-child{font-size: 12px;}
+.writing_inner > .reply1 > p{font-size: 13px;border: 1px solid #979191;border-radius:8px;padding:4px 11px;}
+
+.writing_inner > .reply2{display: flex;flex-direction: row;align-items: center;margin-top: 10px;animation: ani4 1.2s linear 0s;}
+.writing_inner > .reply2 > div{display: flex;flex-direction: column;align-items: center;margin-right: 8px;}
+.writing_inner > .reply2 > div > span:first-child{display: block;width:27px;height:27px;background:url(../images/profile_03.jpg) no-repeat 0 0;background-size: cover;background-position: center;border-radius: 50%;text-indent: -9999px;overflow: hidden;}
+.writing_inner > .reply2 > div > span:last-child{font-size: 12px;}
+.writing_inner > .reply2 > p{font-size: 13px;border: 1px solid #979191;border-radius:8px;padding:4px 50px 4px 10px;}
+
+.writing_inner > p:last-of-type{padding:18px 0;animation: ani4 1.6s linear 0s;}
+.writing_inner > p:last-of-type > a{display: block;background: #FFBCBC;font-size: 13px;padding: 4px 35px;border-radius: 8px;}

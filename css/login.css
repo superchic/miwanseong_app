@@ -1,0 +1,95 @@
+@import url(reset.css);
+/*login.css */
+
+*{-webkit-text-size-adjust:none;}
+body{position:relative;width:375px;font-size: 15px;font-family: 'Nanum Gothic', sans-serif;}
+a{text-decoration:none;color:#8F8F8F;}
+
+/* 로그인 */
+.login{width:375px;height:100%;background: #EFEFEF;box-sizing: border-box;display:flex;flex-direction:column;overflow: hidden;}
+
+.login > .logo > h1{display:flex;flex-direction:column;align-items: center;margin-top:121px;animation: scale_ani 1.5s linear 0s;}
+
+@keyframes scale_ani {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+    
+}
+.login > .logo > h1 > span:first-child{display:block;width:88px;height:88px;background:url(../images/logo_large.png) no-repeat 0 0;text-indent:-9999px;overflow:hidden;margin-bottom:15px;}
+.login > .logo > h1 > span:last-child{display:block;width:116px;height:41px;background:url(../images/logo_letter.png) no-repeat 0 0;background-size:contain;text-indent:-9999px;overflow:hidden;} 
+
+.login > form > fieldset > ol{display:flex;flex-direction:column;align-items: center;}
+.login > form > fieldset > ol > li:first-child{position: relative;margin-bottom:20px;animation: login_move 1.5s linear 0s;}
+
+@keyframes login_move {
+    0% {transform: translateX(-100px);}
+    100% {transform: translateX(0);}
+    
+}
+.login > form > fieldset > ol > li:nth-child(2){position: relative;animation: PW_move 1.5s linear 0s;}
+@keyframes PW_move {
+    0% {transform: translateX(100px);}
+    100% {transform: translateX(0);}
+    
+}
+.login > form > fieldset > ol > li:nth-child(3){margin-top:41px;animation: button_move1 1.2s ease-in 0s,button_move1 2s linear 1.5s infinite ;}
+
+@keyframes button_move1 {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-20px);}
+    100% {transform: translateY(0);}
+    
+}
+
+@keyframes button_move2 {
+    0% {transform: translateX(-10px);}
+    100% {transform: translateY(0);}
+    
+}
+
+
+.login > form > fieldset > ol > li:nth-child(3) > a{display:inline-block;width:302px;height:45px;background:#FFBCBC;
+    border-radius:10px;line-height:45px;color:#fff;text-align:center;}
+.login > form > fieldset > ol > li:nth-child(4){padding:41px 0 21px 0;animation: p_move 0.8s linear 0s, click_scale 2s linear 1s infinite ;}
+
+@keyframes p_move {
+    0% {transform: translateY(40px);}
+    100% {transform: translateY(0);}
+    
+}
+
+.login > form > fieldset > ol > li:last-child{animation: p_move 0.8s linear 0.2s,click_scale 2s linear 1.5s infinite ;}
+
+
+.login > form > fieldset > ol > li > label{display: block;color:#8F8F8F;text-indent: 44px;margin-left:-40px;margin-bottom:6px;}
+
+.login > form{margin-top:53px;}
+.login > form > fieldset > ol > li > input{font-size: 15px;}
+.login > form > fieldset > ol > li > input::placeholder{font-family: 'Nanum Gothic', sans-serif;color:#DED7D7;text-indent:42px;}
+
+
+
+.login > form > fieldset > ol > li > input[type="text"]{width:302px;height:45px;border:none;border:1px solid #9A9A9A;border-radius:10px;color:#DED7D7;background: #EFEFEF;text-indent:42px;}
+.login > form > fieldset > ol > li > input[type="password"]{width:302px;height:45px;border:none;border:1px solid #9A9A9A;border-radius:10px;background: #EFEFEF;text-indent:42px;}
+.login > form > fieldset > ol > li > .id_icon{display:inline-block;position:absolute;left:11px;top:35px;width:20px;height:22px;background:url(../images/icon_id.png) no-repeat 0 0;text-indent: -9999px;overflow:hidden;}
+.login > form > fieldset > ol > li > .pw_icon{display:inline-block;position:absolute;left:11px;top:36px;width:21px;height:21px;background:url(../images/icon_pw.png) no-repeat 0 0;text-indent: -9999px;overflow:hidden;}
+
+@keyframes click_scale {
+    0% {
+        transform: scale(1);}
+
+    25% {
+        transform: scale(1.2);}
+
+    50% {
+        transform: scale(1);}
+
+    75% {
+        transform: scale(1.1);}
+        
+    100% {
+            transform: scale(1);}
+    
+}
+

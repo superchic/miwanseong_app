@@ -1,0 +1,74 @@
+@import url(reset.css);
+/* findpw.css */
+
+*{-webkit-text-size-adjust:none;}
+body{width:375px;height:100%;font-family: 'Nanum Gothic', sans-serif;font-size:15px;}
+a{text-decoration:none;color:#8F8F8F;}
+
+.find_pw{width:100%;height:100%;background: #EFEFEF;box-sizing: border-box;display:flex;flex-direction:column;align-items:center;overflow: hidden;}
+
+.find_pw > ol{display: flex;flex-direction: row;margin:149px 0 71px 46px;}
+.find_pw > ol > li:first-child > a{display:inline-block;width:330px;height:60px;background:url(../images/bg_round_left.png) no-repeat 0 0;line-height: 60px;text-indent:39px;color:#fff;animation: round_menu 0.5s linear 0s,scale_ani 2s linear 1.2s infinite;}
+.find_pw > ol > li:last-child > a{display:inline-block;width:178px;height:60px;background:url(../images/bg_round_right_on.png) no-repeat 0 0;line-height: 60px;text-indent:45px;color:#fff;margin-left: -178px;animation: round_menu 1s linear 0s;}
+
+/* transform:translateX(-178px); */
+
+@keyframes round_menu {
+    0%{transform: translateX(100px);}
+    100%{transform: translateX(0);}
+    
+}
+
+@keyframes scale_ani {
+    0% {
+        transform: scale(1);}
+
+    25% {
+        transform: scale(1.2);}
+
+    50% {
+        transform: scale(1);}
+
+    75% {
+        transform: scale(1.1);}
+        
+    100% {
+            transform: scale(1);}
+    
+}
+
+form > fieldset > ol{display:flex;flex-direction:column;align-items:center;}
+form > fieldset > ol > li{margin-bottom:16px;}
+form > fieldset > ol > li:first-child{transform: scale(1.3);animation: ol_scale 0.5s linear 0s forwards;transform: scale(1.3);}
+form > fieldset > ol > li:nth-child(2){transform: scale(1.3);animation: ol_scale 0.7s linear 0s  forwards;transform: scale(1.3);}
+
+
+form > fieldset > ol > li:nth-child(3){position: relative;transform: scale(1.3);animation: ol_scale 0.9s linear 0s forwards;}
+form > fieldset > ol > li:nth-child(3) > button{position:absolute;top:10px;right:8px;width:104px;height:29px;border:none;border-radius:6px;background: #979191;color:#fff;font-size:14px;cursor: pointer;}
+form > fieldset > ol > li:nth-child(4){position: relative;transform: scale(1.3);animation: ol_scale 1.1s linear 0s forwards;}
+form > fieldset > ol > li:nth-child(4) > span{color:red;position:absolute;right:8px;top:15px;}
+form > fieldset > ol > li:last-child{margin-bottom:0;}
+form > fieldset > ol > li:last-child > button:first-child{width:146px;height:45px;margin-top:66px;font-size:15px;color:#8F8F8F;border:none;border:1px solid #9A9A9A;margin-right:8px;cursor: pointer;animation: button 1.5s linear 0s,click_ani 1s ease-in-out 2.2s infinite;}
+form > fieldset > ol > li:last-child > button:last-child{width:146px;height:45px;margin-top:66px;font-size:15px;color:#8F8F8F;border:none;background:#FFBCBC;cursor: pointer;animation: button 1s linear 0s;}
+
+@keyframes button {
+    0%{transform: translateX(-100px);}
+    100%{transform: translateX(0);}
+}
+
+@keyframes ol_scale {
+    0%{transform: scale(1.3);}
+    100%{transform: scale(1);}
+}
+
+@keyframes click_ani {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-20px);}
+    100% {transform: translateY(0);}
+    
+}
+
+
+input::placeholder{font-size: 14px;color:#8F8F8F;text-indent:10px;}
+input[type="text"]{width:302px;height:45px;border:none;border:1px solid #9A9A9A;border-radius:10px;background: #EFEFEF;text-indent:10px;}
+input[type="email"]{width:302px;height:45px;border:none;border:1px solid #9A9A9A;border-radius:10px;background: #EFEFEF;text-indent:10px;}

@@ -1,0 +1,123 @@
+@import url(reset.css);
+/* my page */
+*{-webkit-text-size-adjust:none;}
+body{width:375px;font-size: 15px;font-family: 'Nanum Gothic', sans-serif;}
+a{text-decoration:none;color:#3B3939;}
+
+.my_page{width:100%;background: #EFEFEF;padding-bottom: 37px;overflow: hidden;}
+.my_page > div:first-child{background:#FFBCBC;border-radius: 0 0 45px 45px;}
+.my_page > div:first-child > ul:first-child{display: flex;flex-direction: row;justify-content: center;align-items: center;padding-top:54px;margin-bottom: 26px;}
+.my_page > div:first-child > ul:first-child > li:first-child{animation: ani1 0.5s linear 0s;}
+.my_page > div:first-child > ul:first-child > li:first-child > a{display:block;width:15px;height:11px;background: url(../images/icon_return.png) no-repeat 0 0;text-indent:-9999px;overflow: hidden;}
+.my_page > div:first-child > ul:first-child > li:nth-child(2){padding:0 95px;font-weight: bold;animation: ani1 1s linear 0s;}
+.my_page > div:first-child > ul:first-child > li:last-child{animation: alert 1s linear 0s;}
+.my_page > div:first-child > ul:first-child > li:last-child > a{display:block;width:30px;height:31px;background: url(../images/icon_alert.png) no-repeat 0 0;text-indent:-9999px;overflow: hidden;}
+
+@keyframes ani1 {
+    0%{transform: translateY(-30px);}
+    100%{transform: translateY(0);}
+    
+}
+
+@keyframes alert {
+    0% {
+        transform: scale(1);}
+
+    25% {
+        transform: scale(1.3);}
+
+    50% {
+        transform: scale(1);}
+
+    75% {
+        transform: scale(1.1);}
+        
+    100% {
+            transform: scale(1);}
+    
+}
+
+.my_page > div:first-child > ul:nth-child(2){display: flex;flex-direction: row;justify-content: center;align-items: center;}
+.my_page > div:first-child > ul:nth-child(2) > li:first-child{width:72px;height:72px;background: url(../images/profile_04.jpg) no-repeat 0 0;background-size: cover;border-radius: 50%;text-indent:-9999px;overflow: hidden;margin-right:23px;animation: profile 1.6s linear 0s;}
+
+@keyframes profile {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+    
+}
+
+
+.my_page > div:first-child > ul:nth-child(2) > li:last-child{font-size: 14px;}
+
+.my_page > div:first-child > ul:last-child{display: flex;flex-direction: row;justify-content: center;align-items: center;margin-top: 20px;padding-bottom:48px;}
+.my_page > div:first-child > ul:last-child > li:first-child{font-weight: 800;}
+.my_page > div:first-child > ul:last-child > li:nth-child(2) > a{display: block;width:19px;height:19px;background: url(../images/btn_more_mypage.png) no-repeat 0 0;text-indent:-9999px;overflow: hidden;margin:0 9px 0 24px;}
+.my_page > div:first-child > ul:last-child > li:last-child{animation: refresh 1.6s linear 0.5s;}
+.my_page > div:first-child > ul:last-child > li:last-child > a{display: block;width:27px;height:27px;background: url(../images/icon_refresh.png) no-repeat 0 0;text-indent:-9999px;overflow: hidden;}
+
+@keyframes refresh {
+    0%{transform: rotate(30deg);}
+    25%{transform: rotate(0);}
+    50%{transform: rotate(40deg);}
+    100%{transform: rotate(0);}
+    
+}
+
+
+.my_page > div:last-child{display:flex;flex-direction: column;justify-content: center;align-items: center;margin-top: 21px;} 
+.my_page > div:last-child > div{display:flex;flex-direction: row;justify-content: center;align-items: center;}.my_page > div:last-child > div > div{width:162px;height: 158px;background: #E1E1E1;border-radius: 22px;margin-bottom: 13px;box-shadow: 5px 5px 8px rgba(214, 214, 214, 0.9);}
+.my_page > div:last-child > div > div > a{display: block;width:162px;height: 158px;}
+.my_page > div:last-child > div > div > a > ul{display: flex;flex-direction: column;align-items: center;}
+.my_page > div:last-child > div > div:first-child{margin-right: 14px;}
+.my_page > div:last-child > div > .photo{animation: ani2 0.4s linear 0.5s;}
+.my_page > div:last-child > div > .photo > a > ul > li:first-child{width:36px;height:26px;background: url(../images/icon_camera2.png) no-repeat 0 0;background-size:contain;text-indent:-9999px;overflow: hidden;margin:35px 0 17px 0;}
+.my_page > div:last-child > div > .photo > a > ul > li:nth-child(2){margin-bottom:13px;}
+
+.my_page > div:last-child > div > .writing{animation: ani3 0.7s linear 0.5s;}
+.my_page > div:last-child > div > .writing > a > ul > li:first-child{width:39.11px;height:27.45px;background: url(../images/icon_writing.png) no-repeat 0 0;background-size:contain;text-indent:-9999px;overflow: hidden;margin:35px 0 12.6px 0;}
+.my_page > div:last-child > div > .writing > a > ul > li:nth-child(2){margin-bottom:13px;}
+
+.my_page > div:last-child > div > .dibs{animation: ani2 1s linear 0.5s;}
+.my_page > div:last-child > div > .dibs > a > ul > li:first-child{width:35px;height:35px;background: url(../images/icon_dibs.png) no-repeat 0 0;background-size:contain;text-indent:-9999px;overflow: hidden;margin:32px 0 12.2px 0;}
+.my_page > div:last-child > div > .dibs > a > ul > li:nth-child(2){margin-bottom:12px;}
+
+.my_page > div:last-child > div > .inqury{animation: ani3 1.3s linear 0.5s,ani_scale 2s linear 2s infinite;}
+.my_page > div:last-child > div > .inqury > a > ul > li:first-child{width:33px;height:33px;background: url(../images/icon_inqury.png) no-repeat 0 0;background-size:contain;text-indent:-9999px;overflow: hidden;margin:49px 0 12.7px 0;}
+
+.my_page > div:last-child > div > .tracking{animation: ani2 1.6s linear 0.5s;}
+.my_page > div:last-child > div > .tracking > a > ul > li:first-child{width:58px;height:27px;background: url(../images/icon_truck.png) no-repeat 0 0;background-size:contain;text-indent:-9999px;overflow: hidden;margin:48px 0 18px 0;}
+
+.my_page > div:last-child > div > .notice{animation: ani3 1.9s linear 0.5s,ani_scale 2s linear 2.6s infinite;}
+.my_page > div:last-child > div > .notice > a > ul > li:first-child{width:50px;height:30px;background: url(../images/icon_notice.png) no-repeat 0 0;background-size:contain;text-indent:-9999px;overflow: hidden;margin:48px 0 19.6px 0;}
+
+@keyframes ani2 {
+    0%{transform: translateX(-40px);}
+    100%{transform: translateX(0);}
+    
+}
+
+@keyframes ani3 {
+    0%{transform: translateX(40px);}
+    100%{transform: translateX(0);}
+    
+}
+
+@keyframes ani_scale {
+    0% {
+        transform: scale(1);}
+
+    25% {
+        transform: scale(1.1);}
+
+    50% {
+        transform: scale(1);}
+
+    75% {
+        transform: scale(1.1);}
+        
+    100% {
+            transform: scale(1);}
+    
+}
+
+
